@@ -21,7 +21,7 @@ public class SaleDTO {
     private Double amount;
     private LocalDate date;
 
-    private SellerDTO sellerDTO;
+    private SellerDTO seller;
 
     public SaleDTO(Sale entity) {
         id = entity.getId();
@@ -29,6 +29,6 @@ public class SaleDTO {
         deals = entity.getDeals();
         amount = entity.getAmount();
         date = entity.getDate();
-        sellerDTO = new SellerDTO(entity.getSeller());
+        seller = new SellerDTO(entity.getSeller());
     }
 }
